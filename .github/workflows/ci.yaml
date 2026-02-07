@@ -4,9 +4,12 @@ jobs:
   My-First-Github-Job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v6
       - name: hello
         run: |
           echo "Hellow world"
-      - name: fail-work
-        run: exit 1;
-          
+      - name: run python script
+        run: |
+          pip install -r requirements.txt
+          python ci.py
+
