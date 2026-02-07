@@ -2,4 +2,4 @@
 
 CICD github actions
 
-ML course CI7CD
+ML course CI/CD con python
